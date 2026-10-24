@@ -1,0 +1,125 @@
+/* Contenedor principal de autenticación */
+.auth-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f6f6f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.auth-container {
+    background: #ffffff;
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-top: 6px solid #e08238; /* Borde superior naranja idéntico al login */
+    width: 100%;
+    max-width: 380px;
+    box-sizing: border-box;
+}
+
+.auth-container h2 {
+    margin: 0 0 22px 0;
+    fontSize: 22px;
+    font-weight: bold;
+    color: #222222;
+    text-align: center;
+}
+
+/* Grupos de inputs */
+.input-group {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444444;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 13px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #e08238; /* Enfoque naranja */
+}
+
+/* Botón principal */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #e08238; /* Botón naranja principal */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+    box-shadow: 0 2px 5px rgba(224, 130, 56, 0.3);
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #cb6f2b; /* Tono naranja más oscuro al pasar el mouse */
+}
+
+/* Enlaces de redirección */
+.auth-link {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 13px;
+    color: #666666;
+}
+
+/* Mensajes de alerta limpios */
+.mensaje-alerta {
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.mensaje-alerta.exito {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+.mensaje-alerta.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+/* Botón de enlace para alternar pantallas */
+.link-btn {
+    background: none;
+    border: none;
+    color: #e08238; /* Texto naranja en el enlace */
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0;
+    text-decoration: underline;
+    font-family: inherit;
+}
+
+.link-btn:hover {
+    color: #cb6f2b;
+}
